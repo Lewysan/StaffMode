@@ -10,22 +10,17 @@ import us.stellarsquad.staffmode.management.ConfigManager;
 public final class StellarCore extends JavaPlugin {
 
     public static StellarCore core;
-    public static ConfigManager settings = ConfigManager.getInstance();
     private final PluginManager pm = Bukkit.getServer().getPluginManager();
 
     @Override
     public void onEnable() {
         core = this;
-        this.registerConfigManager();
         this.registerCommands();
         this.registerListeners();
     }
 
     private void registerListeners() {
         this.pm.registerEvents(new PlayerListener(), this);
-    }
-    private void registerConfigManager(){
-        settings.setup(this);
     }
     private void registerCommands(){
         this.getCommand("staff").setExecutor(new PersonalCommands(this));
