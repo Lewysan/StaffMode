@@ -1,0 +1,10 @@
+name: StaffMode
+version: 1.0
+main: us.stellarsquad.staffmode.StellarCore
+commands:
+    staff:
+        aliases: [staffmode, admin]
+    sfreeze:
+        aliases: [freeze, ss, sss]
+    svanish:
+        aliases: [vanish, evanish]
