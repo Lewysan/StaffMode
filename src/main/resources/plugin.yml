@@ -1,6 +1,8 @@
 name: StaffMode
 version: 1.0
 main: us.stellarsquad.staffmode.StellarCore
+author: "Tyranzx"
+description: "StaffMode para minecraft, disfrutar."
 commands:
     staff:
         aliases: [staffmode, admin]
